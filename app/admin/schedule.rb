@@ -1,5 +1,6 @@
 ActiveAdmin.register Schedule do
-# See permitted parameters documentation:
+    permit_params :description, :start_at, :end_at
+    # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
 # permit_params :list, :of, :attributes, :on, :model
