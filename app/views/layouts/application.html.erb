@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Events</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>Events</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
 
-<%= yield %>
+  </head> 
+  <body>
+    <header>
+      <nav>
+          <div class="row">
+              
+              <ul class="main-nav">
+                  <li><%= link_to "Eventos", schedules_path(:anchor => "schedule")  %></li>    
+                  <li><a href="/sobre">Sobre</a></li>    
+                  <li><a href="#">Contato</a></li>    
+                  <li><%= link_to "Admin", admin_user_session_path %></li>    
+              </ul>
+          
+          
+          </div>
+      
+      </nav>
+      
+      <div class="hero-text-box">
+          <h1>Adeus desorganização. <br>Bem vindo ao Events.</h1>
+        
+          <%= link_to "EVENTOS", schedules_path, :class => "btn btn-full" %>
+          <%= link_to "CONTATO", schedules_path, :class => "btn btn-ghost" %>
+      
+      </div>
+          
+    </header>
+    
+    <section  class="section-features">
+        <div class="row">
+            <h2 id="schedule">Leve a vida &mdash; levando</h2>    
+        </div>
+        <%= yield %>
+           
+    </section>
 
-</body>
+   
+
+    
+  </body>
 </html>
