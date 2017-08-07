@@ -15,8 +15,9 @@
               
               <ul class="main-nav">
                   <li><%= link_to "Eventos", schedules_path(:anchor => "schedule")  %></li>    
-                  <li><a href="/sobre">Sobre</a></li>    
+                  <li><a href="#">Sobre</a></li>    
                   <li><a href="#">Contato</a></li>    
+                  <li><a href="#">Fotos</a></li>    
                   <li><%= link_to "Admin", admin_user_session_path %></li>    
               </ul>
           
@@ -26,9 +27,9 @@
       </nav>
       
       <div class="hero-text-box">
-          <h1>Adeus desorganização. <br>Bem vindo ao Events.</h1>
+          <h1>Chega de desorganização. <br>Bem vindo ao Events.</h1>
         
-          <%= link_to "EVENTOS", schedules_path, :class => "btn btn-full" %>
+          <%= link_to "EVENTOS", schedules_path(:anchor => "schedule"), :class => "btn btn-full" %>
           <%= link_to "CONTATO", schedules_path, :class => "btn btn-ghost" %>
       
       </div>
