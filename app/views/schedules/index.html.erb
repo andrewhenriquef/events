@@ -1,19 +1,24 @@
 <p id="notice"><%= notice %></p>
-
-    <% @schedules.each do |schedule| %>
-      <div class="row">
-        <div class="col span-4-of-4 box">
-          <h3><%= schedule.description %></h3>
-
-          <p>    
-            <%= schedule.start_at %>
-            <%= schedule.end_at %>
-            <%= link_to 'Feito', schedule, method: :delete, data: { confirm: 'Are you sure?' } %>       
-          </p>
-    <% end %>
-        </div>
-                
+  <% count = 0 %>
+  <% @schedules.limit(4).each do |schedule| %>
+    <div class="row">
+      <div class="col span-2-of-5 steps-box">
       </div>
-<br>
+    
+      <div class="col span-2-of-5 steps-box">
+        <div class="works-step">
+          <div><%= count = count + 1 %></div>
+          <h3><%= schedule.description %></h3>
+          <p>
+            
+            <%= schedule.start_at.strftime("%b %d. %y")%>
+            <%= schedule.end_at.strftime("%b %d. %y") %>
+          </p>
+        </div>
+      </div>
 
-<%= link_to 'New Schedule', new_schedule_path %>
+      <div class="col span-1-of-5 steps-box">
+      </div>
+
+    </div>
+    <% end %>  
