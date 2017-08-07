@@ -2,22 +2,23 @@
   <% count = 0 %>
   <% @schedules.limit(4).each do |schedule| %>
     <div class="row">
-      <div class="col span-2-of-5 steps-box">
+      <div class="col span-2-of-6">
       </div>
     
-      <div class="col span-2-of-5 steps-box">
+      <div class="col span-2-of-6 steps-box">
         <div class="works-step">
           <div><%= count = count + 1 %></div>
           <h3><%= schedule.description %></h3>
           <p>
             
-            <%= schedule.start_at.strftime("%b %d. %y")%>
-            <%= schedule.end_at.strftime("%b %d. %y") %>
+            <%= schedule.start_at.strftime("%b %d. %Y às %Hhs")%>
+            &mdash;
+            <%= schedule.end_at.strftime("%b %d. %Y às %Hhs") %>
           </p>
         </div>
       </div>
 
-      <div class="col span-1-of-5 steps-box">
+      <div class="col span-2-of-6">
       </div>
 
     </div>
