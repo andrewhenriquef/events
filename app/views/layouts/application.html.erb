@@ -15,9 +15,9 @@
               
               <ul class="main-nav">
                   <li><%= link_to "Eventos", schedules_path(:anchor => "schedule")  %></li>    
-                  <li><a href="#about">Sobre</a></li>    
-                  <li><a href="#photos">Fotos</a></li>      
-                  <li><a href="#contact">Contato</a></li>  
+                  <li><a href="#photos">Fotos</a></li> 
+                  <li><a href="#about">Sobre</a></li>     
+                  <li><a href="#contacts">Contato</a></li>  
                   <li><%= link_to "Admin", admin_user_session_path %></li>    
               </ul>
           
@@ -30,54 +30,11 @@
           <h1>Chega de desorganização. <br>Bem vindo ao Events.</h1>
         
           <%= link_to "EVENTOS", schedules_path(:anchor => "schedule"), :class => "btn btn-full" %>
-          <%= link_to "CONTATO", schedules_path, :class => "btn btn-ghost" %>
+          <a href="#contacts" class="btn btn-ghost">CONTATO</a>
       
       </div>
           
     </header>
-
-    <section class="section-features">
-        <div class="row">
-            <h2 id=about>Organize seus eventos &mdash; em um só lugar</h2>
-            <p class="long-copy">
-                Olá, somos do events. Criamos um app onde seus eventos são alocados e exibidos para todos os seus clientes, amigos e comunidade. Venha fazer parte da events, mostre seus eventos para o mundo e esteja sempre atualizado com a galera!
-            </p>
-        </div>
-    
-        <div class="row">
-            <div class="col span-1-of-4 box">
-                
-                <h3>Atualizado 365 dias do ano</h3>
-                <p>    
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                </p>
-            </div>
-            
-            <div class="col span-1-of-4 box">
-                
-                <h3>Organize seus eventos</h3>
-                <p>    
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  
-                </p>
-            </div>
-            
-            <div class="col span-1-of-4 box">
-                
-                <h3>Plataforma 100% Online</h3>
-                <p>    
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                </p>
-            </div>
-            
-            <div class="col span-1-of-4 box">
-                
-                <h3>Compartilhe seus eventos</h3>
-                <p>    
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                </p>
-            </div>
-        </div>
-    </section>
 
     <section class="section-steps">
         <div class="row">
@@ -145,7 +102,51 @@
     
     </section>
 
-    <section class="section-testimonials">
+
+    <section class="section-features">
+        <div class="row">
+            <h2 id=about>Organize seus eventos &mdash; em um só lugar</h2>
+            <p class="long-copy">
+                Olá, somos do events. Criamos um app onde seus eventos são alocados e exibidos para todos os seus clientes, amigos e comunidade. Venha fazer parte da events, mostre seus eventos para o mundo e esteja sempre atualizado com a galera!
+            </p>
+        </div>
+    
+        <div class="row">
+            <div class="col span-1-of-4 box">
+                
+                <h3>Atualizado 365 dias do ano</h3>
+                <p>    
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                </p>
+            </div>
+            
+            <div class="col span-1-of-4 box">
+                
+                <h3>Organize seus eventos</h3>
+                <p>    
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  
+                </p>
+            </div>
+            
+            <div class="col span-1-of-4 box">
+                
+                <h3>Plataforma 100% Online</h3>
+                <p>    
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                </p>
+            </div>
+            
+            <div class="col span-1-of-4 box">
+                
+                <h3>Compartilhe seus eventos</h3>
+                <p>    
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="section-testimonials">
         <div class="row">
             <h2>Entre em contato conosco</h2>
         </div>
