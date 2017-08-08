@@ -160,6 +160,16 @@ input[type=submit] {
     line-height: 145%;
 }
 
+/*----- ICONS -----*/
+
+.icon-big {
+    font-size: 350%;
+    display: block;
+    color: #c0392b;
+    margin-bottom: 10px;
+}
+
+
 /* ------------------------------------------------------------*/
 /* HEADER */
 /* ------------------------------------------------------------*/
@@ -217,36 +227,36 @@ header {
 
 
 /* ------------------------------------------------------------*/
-/* FEATURES */
+/* ABOUT */
 /* ------------------------------------------------------------*/
 
-.section-features .long-copy {
+.section-about .long-copy {
     margin-bottom: 30px;
 }
 
 
 /* ------------------------------------------------------------*/
-/* Events section */
+/* EVENTS */
 /* ------------------------------------------------------------*/
 
-.section-steps {
+.section-events {
     background-color: #f4f4f4;
 }
 
-.steps-box {
+.events-box {
     height: 70px !important;
     margin: 10px 0px 0px 0px !important;
     text-align: center;
     font-size: 90%;
 }
 
-.steps-box:first-child {
+.events-box:first-child {
     text-align: right;
     padding-right: 3%;
     margin-top: 30px;
 }
 
-.steps-box:last-child {
+.events-box:last-child {
     margin-top: 70px;
     padding-left: 3%;
 }
@@ -255,23 +265,23 @@ header {
     width: 40%;
 }
 
-.works-step {
+.event {
     margin-bottom: 0px !important;
 }
 
-.works-step h3 {
+.event h3 {
     margin-bottom:0px;
     padding-top: 5px;
 }
 
-.works-step:last-of-type {
+.event:last-of-type {
     margin-bottom: 80px;
 }
 
-.works-step div {
+.event div {
 
-    color: #e67e22;
-    border: 2px solid #e67e22;
+    color: #c0392b;
+    border: 2px solid #c0392b;
     display: inline-block;
     border-radius: 50%;
     height: 55px;
@@ -283,19 +293,13 @@ header {
     margin-right: 25px;
 }
 
-.works-step p {
+.event p {
     padding-top: 5px;
 }
 
 .btn-app:link,
 .btn-app:visited {
     border: 0;
-}
-
-.btn-app img {
-    height: 50px;
-    width: auto;
-    margin-right: 10px;
 }
 
 
@@ -344,11 +348,11 @@ header {
 
 
 /* ------------------------------------------------------------*/
-/* TESTIMONIALS */
+/* CONTACTS */
 /* ------------------------------------------------------------*/
 
 
-.section-testimonials {
+.section-contacts {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8) , rgba(0, 0, 0, 0.8)), url(<%= asset_path 'meeting-time.jpg' %>);
     background-size: cover;
     color: #fff;
@@ -387,7 +391,7 @@ cite img {
     vertical-align: middle;
 }
 
-.section-testimonials h2{
+.section-contacts h2{
     color: #fff;
 }
 
@@ -443,27 +447,22 @@ footer {
     font-size: 160%;   
 }
 
-.ion-social-facebook,
 .ion-social-twitter,
-.ion-social-instagram,
-.ion-social-googleplus {
+.ion-social-linkedin,
+.ion-social-github {
     transition: color 0.2s;
-}
-
-.ion-social-facebook:hover {
-    color: #3b5998;
 }
 
 .ion-social-twitter:hover {
     color: #55acee;
 }
 
-.ion-social-googleplus:hover {
-    color: #dd4b39;
+.ion-social-github:hover {
+    color: #fff;
 }
 
-.ion-social-instagram:hover {
-    color: #125688;
+.ion-social-linkedin:hover {
+    color: #007bb6;
 }
 
 footer p {
