@@ -29,6 +29,9 @@ gem 'activeadmin'
 #Devise is a flexible authentication solution for Rails based on Warden. It:
 gem 'devise'
 
+#ionicons gem
+gem 'ionicons-rails'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
