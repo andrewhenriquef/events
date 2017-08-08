@@ -16,8 +16,8 @@
               <ul class="main-nav">
                   <li><%= link_to "Eventos", schedules_path(:anchor => "schedule")  %></li>    
                   <li><a href="#about">Sobre</a></li>    
-                  <li><a href="#">Contato</a></li>    
-                  <li><a href="#">Fotos</a></li>    
+                  <li><a href="#photos">Fotos</a></li>      
+                  <li><a href="#contact">Contato</a></li>  
                   <li><%= link_to "Admin", admin_user_session_path %></li>    
               </ul>
           
@@ -88,7 +88,7 @@
         
     </section>
 
-    <section class="section-adventures">
+    <section id="photos" class="section-adventures">
         <ul class="adventures-showcase clearfix">
             <li>
                 <figure class="adventures-photo">
@@ -143,6 +143,32 @@
             
         </ul>
     
+    </section>
+
+    <section class="section-testimonials">
+        <div class="row">
+            <h2>Entre em contato conosco</h2>
+        </div>
+    
+        <div class="row">
+            
+            <div class="col span-1-of-3">
+                
+            </div>
+        
+            <div class="col span-1-of-3">
+                <blockquote>
+                    Email: andrewhenriquef@gmail.com<br>
+                    Phone: (16)98145-8070<br>
+                    Developer
+
+                    <cite><img src="<%= asset_path('myprofilephoto.jpg') %>" alt="Andrew Oliveira"> Andrew Oliveira</cite>
+                </blockquote>
+            </div>
+            
+            <div class="col span-1-of-3">
+            </div>
+        </div>
     </section>
   </body>
 </html>
