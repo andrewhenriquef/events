@@ -9,167 +9,195 @@
 
   </head> 
   <body>
-    <header>
-      <nav>
-          <div class="row">
-              
-              <ul class="main-nav">
-                  <li><%= link_to "Eventos", schedules_path(:anchor => "schedule")  %></li>    
-                  <li><a href="#photos">Fotos</a></li> 
-                  <li><a href="#about">Sobre</a></li>     
-                  <li><a href="#contacts">Contato</a></li>  
-                  <li><%= link_to "Admin", admin_user_session_path %></li>    
-              </ul>
-          
-          
-          </div>
-      
-      </nav>
-      
-      <div class="hero-text-box">
-          <h1>Chega de desorganização. <br>Bem vindo ao Events.</h1>
-        
-          <%= link_to "EVENTOS", schedules_path(:anchor => "schedule"), :class => "btn btn-full" %>
-          <a href="#contacts" class="btn btn-ghost">CONTATO</a>
-      
-      </div>
-          
-    </header>
-
-    <section class="section-steps">
-        <div class="row">
-            <h2 id="schedule">Leve a vida &mdash; com events</h2>
-        </div>
-               
-        <%= yield %>
-        
-    </section>
-
-    <section id="photos" class="section-adventures">
-        <ul class="adventures-showcase clearfix">
-            <li>
-                <figure class="adventures-photo">
-                    <img src="<%= asset_path('women-sparklers.jpg') %>" alt="women sparkles">
-                </figure>
-            </li>
-            
-            <li>
-                <figure class="adventures-photo">
-                    <img src="<%= asset_path('working-the-crowd.jpg') %>" alt="working the crowd">
-                </figure>
-            </li>
-            
-            <li>
-                <figure class="adventures-photo">
-                    <img src="<%= asset_path('sparkler-677774_1920.jpg') %>" alt="sparkles">
-                </figure>
-            </li>
-            
-            <li>
-                <figure class="adventures-photo">
-                    <img src="<%= asset_path('singer-540771_1920.jpg') %>" alt="korean singer">
-                </figure>
-            </li>
-            
-        </ul>
-        
-        <ul class="adventures-showcase clearfix">
-            <li>
-                <figure class="adventures-photo">
-                    <img src="<%= asset_path('people-music.jpg') %>" alt="rave">
-                </figure>
-            </li>
-            
-            <li>
-                <figure class="adventures-photo">
-                    <img src="<%= asset_path('drummer-1208190_1920.jpg') %>" alt="drummer">
-                </figure>
-            </li>
-            
-            <li>
-                <figure class="adventures-photo">
-                    <img src="<%= asset_path('dj-720589_1920.jpg') %>" alt="dj">
-                </figure>
-            </li>
-            
-            <li>
-                <figure class="adventures-photo">
-                    <img src="<%= asset_path('cheers-839865_1920.jpg') %>" alt="cheers">
-                </figure>
-            </li>
-            
-        </ul>
-    
-    </section>
-
-
-    <section class="section-features">
-        <div class="row">
-            <h2 id=about>Organize seus eventos &mdash; em um só lugar</h2>
-            <p class="long-copy">
-                Olá, somos do events. Criamos um app onde seus eventos são alocados e exibidos para todos os seus clientes, amigos e comunidade. Venha fazer parte da events, mostre seus eventos para o mundo e esteja sempre atualizado com a galera!
-            </p>
-        </div>
-    
-        <div class="row">
-            <div class="col span-1-of-4 box">
+        <header>
+            <nav>
+                <div class="row">
+                    
+                    <ul class="main-nav">
+                        <li><%= link_to "Eventos", schedules_path(:anchor => "schedule")  %></li>    
+                        <li><a href="#photos">Fotos</a></li> 
+                        <li><a href="#about">Sobre</a></li>     
+                        <li><a href="#contacts">Contato</a></li>  
+                        <li><%= link_to "Admin", admin_user_session_path %></li>    
+                    </ul>
                 
-                <h3>Atualizado 365 dias do ano</h3>
-                <p>    
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                
+                </div>
+            
+            </nav>
+        
+            <div class="hero-text-box">
+                <h1>Chega de desorganização. <br>Bem vindo ao Events.</h1>
+                
+                <%= link_to "EVENTOS", schedules_path(:anchor => "schedule"), :class => "btn btn-full" %>
+                <a href="#contacts" class="btn btn-ghost">CONTATO</a>
+            
+            </div>
+            
+        </header>
+
+        <section class="section-steps">
+            <div class="row">
+                <h2 id="schedule">Leve a vida &mdash; com events</h2>
+            </div>
+                
+            <%= yield %>
+            
+        </section>
+
+        <section id="photos" class="section-adventures">
+            <ul class="adventures-showcase clearfix">
+                <li>
+                    <figure class="adventures-photo">
+                        <img src="<%= asset_path('women-sparklers.jpg') %>" alt="women sparkles">
+                    </figure>
+                </li>
+                
+                <li>
+                    <figure class="adventures-photo">
+                        <img src="<%= asset_path('working-the-crowd.jpg') %>" alt="working the crowd">
+                    </figure>
+                </li>
+                
+                <li>
+                    <figure class="adventures-photo">
+                        <img src="<%= asset_path('sparkler-677774_1920.jpg') %>" alt="sparkles">
+                    </figure>
+                </li>
+                
+                <li>
+                    <figure class="adventures-photo">
+                        <img src="<%= asset_path('singer-540771_1920.jpg') %>" alt="korean singer">
+                    </figure>
+                </li>
+                
+            </ul>
+            
+            <ul class="adventures-showcase clearfix">
+                <li>
+                    <figure class="adventures-photo">
+                        <img src="<%= asset_path('people-music.jpg') %>" alt="rave">
+                    </figure>
+                </li>
+                
+                <li>
+                    <figure class="adventures-photo">
+                        <img src="<%= asset_path('drummer-1208190_1920.jpg') %>" alt="drummer">
+                    </figure>
+                </li>
+                
+                <li>
+                    <figure class="adventures-photo">
+                        <img src="<%= asset_path('dj-720589_1920.jpg') %>" alt="dj">
+                    </figure>
+                </li>
+                
+                <li>
+                    <figure class="adventures-photo">
+                        <img src="<%= asset_path('cheers-839865_1920.jpg') %>" alt="cheers">
+                    </figure>
+                </li>
+                
+            </ul>
+        
+        </section>
+
+
+        <section class="section-features">
+            <div class="row">
+                <h2 id=about>Organize seus eventos &mdash; em um só lugar</h2>
+                <p class="long-copy">
+                    Olá, somos do events. Criamos um app onde seus eventos são alocados e exibidos para todos os seus clientes, amigos e comunidade. Venha fazer parte da events, mostre seus eventos para o mundo e esteja sempre atualizado com a galera!
                 </p>
             </div>
-            
-            <div class="col span-1-of-4 box">
+        
+            <div class="row">
+                <div class="col span-1-of-4 box">
+                    
+                    <h3>Atualizado 365 dias do ano</h3>
+                    <p>    
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                    </p>
+                </div>
                 
-                <h3>Organize seus eventos</h3>
-                <p>    
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  
-                </p>
-            </div>
-            
-            <div class="col span-1-of-4 box">
+                <div class="col span-1-of-4 box">
+                    
+                    <h3>Organize seus eventos</h3>
+                    <p>    
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  
+                    </p>
+                </div>
                 
-                <h3>Plataforma 100% Online</h3>
-                <p>    
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                </p>
-            </div>
-            
-            <div class="col span-1-of-4 box">
+                <div class="col span-1-of-4 box">
+                    
+                    <h3>Plataforma 100% Online</h3>
+                    <p>    
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                    </p>
+                </div>
                 
-                <h3>Compartilhe seus eventos</h3>
-                <p>    
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                </p>
+                <div class="col span-1-of-4 box">
+                    
+                    <h3>Compartilhe seus eventos</h3>
+                    <p>    
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contacts" class="section-testimonials">
-        <div class="row">
-            <h2>Entre em contato conosco</h2>
-        </div>
-    
-        <div class="row">
-            
-            <div class="col span-1-of-3">
-                
+        <section id="contacts" class="section-testimonials">
+            <div class="row">
+                <h2>Entre em contato conosco</h2>
             </div>
         
-            <div class="col span-1-of-3">
-                <blockquote>
-                    Email: andrewhenriquef@gmail.com<br>
-                    Phone: (16)98145-8070<br>
-                    Developer
+            <div class="row">
+                
+                <div class="col span-1-of-3">
+                    
+                </div>
+            
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        Email: andrewhenriquef@gmail.com<br>
+                        Phone: (16)98145-8070<br>
+                        Developer
 
-                    <cite><img src="<%= asset_path('myprofilephoto.jpg') %>" alt="Andrew Oliveira"> Andrew Oliveira</cite>
-                </blockquote>
+                        <cite><img src="<%= asset_path('myprofilephoto.jpg') %>" alt="Andrew Oliveira"> Andrew Oliveira</cite>
+                    </blockquote>
+                </div>
+                
+                <div class="col span-1-of-3">
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav"> 
+                        <li><%= link_to "Eventos", schedules_path(:anchor => "schedule")  %></li>    
+                        <li><a href="#photos">Fotos</a></li> 
+                        <li><a href="#about">Sobre</a></li>     
+                        <li><a href="#contacts">Contato</a></li>  
+                        <li><%= link_to "Admin", admin_user_session_path %></li>  
+                    </ul>
+                </div>
+                
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="https://github.com/andrewhenriquef" target="_blank"><i class="ion-social-github"></i></a></li>
+                        <li><a href="https://twitter.com/andrewhenriquef" target="_blank"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/andrew-oliveira-52184870/" target="_blank"><i class="ion-social-linkedin"></i></a></li>
+                    </ul>
+                </div>
             </div>
             
-            <div class="col span-1-of-3">
+            <div class="row">
+                <p>
+                    Copyright &copy; 2015 by Events. All rights reserved.
+                </p>
             </div>
-        </div>
-    </section>
-  </body>
+        </footer>
+    </body>
 </html>
